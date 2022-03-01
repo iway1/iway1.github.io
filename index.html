@@ -5,6 +5,7 @@
     <div class="body">
         <div class="inner">
         <form action="https://formspree.io/f/xyyojwzo" method="POST">
+            <h1>Interactive Statement Support</h1>
             <label>
                 Email:
                 <input type="email" name="email">
@@ -26,10 +27,37 @@
             padding-top: 100px;
         }
         .inner {
-            max-width: 600px;
+            min-width: 600px;
         }
         label {
             margin-bottom:20px;
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            font-size: 24px;
+        }
+        input, textarea {
+            align-self: stretch;
+            min-height: 24px;
+            font-size: 24px;
+        }
+        textarea {
+            min-height: 200px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            border: 0;
+            outline: 0;
+            background-color: #005599;
+            color: white;
+            height: 50px;
+            font-size: 24px;
+        }
+        button:hover {
+            filter: brightness(1.5);
         }
     </style>
 </body>
